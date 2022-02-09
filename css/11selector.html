@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            color: blue;
+        }
+
+        .note {
+            text-decoration: underline;
+        }
+
+        .error{
+            text-decoration: line-through;
+        }
+
+        #head3 {
+            font-size: 3em;
+        }
+
+        /* 클래스명 note와 error를 가진 클래스 */
+        .note.error { 
+            color:red;     
+        }
+
+        /* p element이면서 note class */
+        p.note{
+            font-family: D2Coding monospace;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1#head$.note*3>lorem3 -->
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Dignissimos, expedita excepturi.</h1>
+    <h1 id="head3" class="note">Voluptates, provident natus.</h1>
+
+    <!-- h1#head$@4.error*3>lorem3 -->
+    <h1 id="head4" class="error">Lorem, ipsum dolor.</h1>
+    <h1 id="head5" class="error">Quae, optio numquam?</h1>
+    <h1 id="head6" class="error">Velit, nulla ratione!</h1>
+
+    <!-- h1#head$@7.note.error*2>lorem3 -->
+    <h1 id="head7" class="note error">Lorem, ipsum dolor.</h1>
+    <h1 id="head8" class="note error">Quam, culpa obcaecati.</h1>
+
+    <!-- p.note*2>lorem -->
+    <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptates tenetur fuga quam. Dolore, error quidem nobis similique cupiditate exercitationem dicta sint, magni, placeat vero ipsum nesciunt cumque recusandae numquam!</p>
+    <p class="note">Optio, culpa? Sit fuga nam officiis tempore sed laboriosam consectetur laudantium asperiores, recusandae ut deserunt est perspiciatis quibusdam fugiat saepe voluptatibus odit obcaecati. Itaque autem deserunt, adipisci quibusdam laudantium asperiores!</p>
+</body>
+</html>
