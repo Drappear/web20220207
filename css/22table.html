@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 같은 property 사용 시 , 를 이용하여 그룹 selector로 만들 수 있음 */
+        table, th, td {
+            border: 2px solid black;
+        }
+
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+
+        td:hover {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- table>tr*3>td*4>lorem1 -->
+    <table>
+        <!-- tr>th*4>lorem1 -->
+        <tr>
+            <th>Lorem.</th>
+            <th>Consectetur?</th>
+            <th>Obcaecati.</th>
+            <th>Aut.</th>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Corporis!</td>
+            <td>Impedit!</td>
+            <td>Quod.</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Quisquam!</td>
+            <td>Architecto.</td>
+            <td>Earum?</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Praesentium!</td>
+            <td>Accusantium?</td>
+            <td>Ut.</td>
+        </tr>
+    </table>
+</body>
+</html>

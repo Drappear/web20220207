@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        [title^="j"] {
+            /* j로 시작하는 attribute명 */
+            color : blue;
+        }
+
+        [title$="a"] {
+            /* a로 끝나는 attribute명 */
+            color : gold;
+        }
+
+        h1[title$="a"] {
+            /* h1 element중 title attribute명이 a로 끝나는 */
+            font-size: 3em;
+        }
+
+        [title*="o"] {
+            /* title attribute명에 o가 들어가는 */
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1[title]*5>lorem3 -->
+    <h1 title="aoc">Lorem, ipsum dolor.</h1>
+    <h1 title="jef">Beatae, aliquam maxime!</h1>
+    <h1 title="goi">Harum, culpa obcaecati.</h1>
+    <h1 title="jkl">Consequatur, architecto recusandae?</h1>
+    <h1 title="mna">Et, illo corrupti?</h1>
+
+    <!-- h2[title]*3>lorem3 -->
+    <h2 title="korea">Lorem, ipsum dolor.</h2>
+    <h2 title="seoul">Numquam, eius odit!</h2>
+    <h2 title="asia">Pariatur, corporis ratione.</h2>
+</body>
+</html>
