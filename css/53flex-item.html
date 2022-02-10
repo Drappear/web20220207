@@ -3,16 +3,59 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <style>
+      .upside-menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #555;
+      }
+      .upside-menu-content {
+        display: block;
+        margin: 5px 30px;
+        padding: 0;
+      }
+      .upside-menu-content:hover {
+        background-color: #999;
+        margin: 0;
+        padding: 5px 30px;
+      }
       .body-container {
         display: flex;
       }
       .main-content-container {
         flex: 1;
-        background-color: blue;
+        background-color: ivory;
+      }
+      
+      .side-menu-container {
+        margin: 0;
+        padding: 0;
+        width: auto;
+        background-color: #999;
+      }
+      .side-menu {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      .side-menu:hover {
+        background-color: #555;
+        color: aliceblue;
       }
     </style>
   </head>
   <body>
+    <div>
+      <ul class="upside-menu">
+        <li class="upside-menu-content">Lorem.</li>
+        <li class="upside-menu-content">Id?</li>
+        <li class="upside-menu-content">Nostrum?</li>
+        <li class="upside-menu-content">Numquam.</li>
+        <li class="upside-menu-content">Minus!</li>
+      </ul>
+    </div>
     <!-- .body-container>.side-menu-container+.main-content-container+.ad-container -->
     <div class="body-container">
       <div class="side-menu-container">
