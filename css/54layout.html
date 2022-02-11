@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .top,
+    .nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .top-left,
+    .top-right,
+    .nav-left,
+    .nav-right {
+      display: flex;
+    }
+
+    .top-menu-item,
+    .nav-menu-item {
+      padding: 10px 20px;
+    }
+    .top-menu-item:hover {
+      background-color: black;
+      color: white;
+    }
+    .nav-menu-item:hover {
+      background-color: white;
+      color: black;
+    }
+    .nav {
+      background-color: black;
+      color: white;
+    }
+  
+    .main-container {
+      display: flex;
+      height: 1200px;
+    }
+
+    .main-left {
+      width: 150px;
+      background-color: grey;
+    }
+
+    .main-right {
+      width: 200px;
+      background-color: grey;
+    }
+
+    .main-content {
+      flex: 1;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      background-color: rgb(95, 189, 95);
+      color: white;
+      width: 100px;
+      height: 50px;
+      border-style: none;
+      border-radius: 10px;
+      font-size: x-large;
+    }
+    .main-left-menu-item {
+      color: white;
+      text-align: center;
+      margin: 0px;
+      padding: 5px;
+    }
+    .main-left-menu-item:hover {
+      background-color: black;
+    }
+
+    .nav-right> .nav-menu-item {
+      font-size: 2em;
+      color: bisque;
+    }
+  
+  </style>  
+</head>
+
+<body>
+  <!-- .top>.left>.top-menu-item*5{LINK}^.right>.top-menu-item*3{LINK} -->
+  <div class="top">
+    <div class="top-left">
+      <div class="top-menu-item">LINK</div>
+      <div class="top-menu-item">LINK</div>
+      <div class="top-menu-item">LINK</div>
+      <div class="top-menu-item">LINK</div>
+      <div class="top-menu-item">LINK</div>
+    </div>
+    <div class="top-right">
+      <div class="top-menu-item">LINK</div>
+      <div class="top-menu-item">LINK</div>
+      <div class="top-menu-item">LINK</div>
+    </div>
+  </div>
+
+  <!-- .nav>.nav-left>.nav-menu-item*16{LINK}^.nav-right>.nav-menu-item*3{@} -->
+  <div class="nav">
+    <div class="nav-left">
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+      <div class="nav-menu-item">LINK</div>
+    </div>
+    <div class="nav-right">
+      <div class="nav-menu-item"><i class="fa-solid fa-circle-half-stroke"></i></div>
+      <div class="nav-menu-item"><i class="fa-solid fa-earth-americas"></i></div>
+      <div class="nav-menu-item"><i class="fa-solid fa-magnifying-glass"></i></div>
+    </div>
+  </div>
+  <!-- .main-container>.main-left+.main-content+.main-right -->
+  <div class="main-container">
+    <div class="main-left">
+      <!-- .main-left-menu-item*30>lorem1 -->
+      <div class="main-left-menu-item">Lorem.</div>
+      <div class="main-left-menu-item">Accusantium.</div>
+      <div class="main-left-menu-item">Eius!</div>
+      <div class="main-left-menu-item">Vitae?</div>
+      <div class="main-left-menu-item">Harum?</div>
+      <div class="main-left-menu-item">Commodi!</div>
+      <div class="main-left-menu-item">Debitis!</div>
+      <div class="main-left-menu-item">Quo.</div>
+      <div class="main-left-menu-item">Nobis.</div>
+      <div class="main-left-menu-item">Quis.</div>
+      <div class="main-left-menu-item">Consectetur.</div>
+      <div class="main-left-menu-item">Quasi.</div>
+      <div class="main-left-menu-item">Adipisci.</div>
+      <div class="main-left-menu-item">Delectus?</div>
+      <div class="main-left-menu-item">In?</div>
+      <div class="main-left-menu-item">Praesentium!</div>
+      <div class="main-left-menu-item">Nobis!</div>
+      <div class="main-left-menu-item">Natus.</div>
+      <div class="main-left-menu-item">Numquam?</div>
+      <div class="main-left-menu-item">Voluptates.</div>
+      <div class="main-left-menu-item">Soluta.</div>
+      <div class="main-left-menu-item">Temporibus.</div>
+      <div class="main-left-menu-item">Cum.</div>
+      <div class="main-left-menu-item">Quaerat?</div>
+      <div class="main-left-menu-item">Deleniti.</div>
+      <div class="main-left-menu-item">Dolor?</div>
+      <div class="main-left-menu-item">Corporis!</div>
+      <div class="main-left-menu-item">Est?</div>
+      <div class="main-left-menu-item">Adipisci.</div>
+      <div class="main-left-menu-item">Cumque!</div>
+    </div>
+
+    <div class="main-content">
+      <!-- h1>lorem3^button*2 -->
+      <h1>
+        Lorem, ipsum dolor.
+      </h1>
+      <div class="button-container">
+        <button>home</button>
+        <button>next</button>
+      </div>
+    </div>
+    <div class="main-right"></div>
+  </div>
+</body>
+
+</html>
